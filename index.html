@@ -1,47 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>String Machine</title>
-	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<title>String Machine</title>
+	
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/stringMachine.js"></script>
+	
 </head>
 <body>
+	<header>
+		<h2 id='header'>String Machine</h2>
+	</header>
+	<br>
+	
+	<div class="container">
+		
+	<div class="jumbotron text-center">
 	<!--9 string guitar iamge-->
-	<img src="images/9string.png" alt="String image">
+	<img id="img" src="images/9string.png" alt="String image">
 	
-	<h2>String Machine</h2>
-	
+	</div>
 
 
 			<!--USER INPUTS-->
-	Enter a String: <input id="inBox1" type= "text">
+	<section class="user-input">
+	<div class="text-center">	
+	<label>Enter a String:</label>
+	<input id="inBox1" type= "text">
+	
 	<br>
 
-
-	Enter a filter length: <input id="inBox2"  type= "text">
+	<label>Enter a filter length:</label>
+	<input id="inBox2"  type= "text">
+	</div>
+	</section>
+	
 	<br>
 
 
 			<!--BUTTONS-->
-	<button id="btn1">isVowel1</button>
+	<section class="buttons">
+		<div id="buttons" class= "col-md-12 text-center">
+			<button id="btn1" class="btn">isVowel1</button>
+		
+			<button id="btn2" class="btn">isVowel2</button>
+		
+			<button id="btn3" class="btn">strReverse1</button>
+		
+			<button id="btn4" class="btn">strReverse2</button>
+		
+			<button id="btn5" class="btn">getMaxWord</button>
+			
+			<button id="btn6" class="btn">filterWords</button>
+		</div>
+	</section>
+	
+	
+	<br>
+	<br>
 
-	<button id="btn2">isVowel2</button>
+	<div id= "outDiv" class="text-center"></div>
 
-	<button id="btn3">strReverse1</button>
-
-	<button id="btn4">strReverse2</button>
-
-	<button id="btn5">getMaxWord</button>
-
-	<button id="btn6">filterWords</button>
-
-
-
-	<div id= "outDiv"></div>
-
-	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="js/stringMachine.js"></script>
+	<br>
+	<br>
+	</div>
+	
+	<footer id="footer">
+		
+		<p class="text-center">View Github Page! <a href="https://github.com/rosborne132/String_Machine"><i id="github" class="devicon-github-plain"></i></a></p>
+		<p class="text-center">Copyright &copy; 2017</p>	
+	</footer>
 
 </body>
 </html>

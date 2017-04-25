@@ -1,0 +1,62 @@
+#img{
+    margin: auto;
+    display: block;
+}
+
+header{
+    background-color: #333;
+    width: 100%;
+    bottom: 10;
+    position: fixed;
+}
+
+header h2{
+    margin-top: 1px;
+    color: white;
+}
+
+#header{
+    text-align: center;
+}
+
+#string{
+    text-align: center;
+}
+
+#filter{
+    text-align: center;
+}
+
+#outDiv{
+    display: none;
+    font-size: 35px  
+}
+
+.btn{
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 7px 7px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 1px 1px;
+    cursor: pointer;
+}
+
+#github{
+    font-size: 18px;
+    
+}
+
+footer {
+    background-color: #333;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+footer p{
+    margin-top: 5px;
+    color: white;
+}

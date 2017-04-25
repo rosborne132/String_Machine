@@ -86,43 +86,43 @@ var filterWords = function(word, n){
 //1. define the onclick handler
 var main = function() {
     var str, len; //user inputs
-
-
+    
+     $("#outDiv").text = "";
 
     //dispatch on button id
     if (this.id == "btn1"){
         //get user input
         str = $("#inBox1").val();
         console.log(str)
-        $("#outDiv").text(isVowel1(str));
+        $("#outDiv").text(isVowel1(str)).fadeIn('100');
     }
 
     if (this.id == "btn2"){
         //get user input
         str = $("#inBox1").val();
         console.log(str)
-        $("#outDiv").text(isVowel2(str));
+        $("#outDiv").text(isVowel2(str)).fadeIn('100');
     }
 
     if (this.id == "btn3"){
         //get user input
         str = $("#inBox1").val();
         console.log(str)
-        $("#outDiv").text(strReverse1(str));
+        $("#outDiv").text(strReverse1(str)).fadeIn('100');
     }
 
      if (this.id == "btn4"){
         //get user input
         str = $("#inBox1").val();
         console.log(str)
-        $("#outDiv").text(strReverse2(str));
+        $("#outDiv").text(strReverse2(str)).fadeIn('100');
     }   
 
     if (this.id == "btn5"){
         //get user input
         str = $("#inBox1").val();
         console.log(str)
-        $("#outDiv").text(getMaxWord(str));
+        $("#outDiv").text(getMaxWord(str)).fadeIn('100');
     } 
 
      if (this.id == "btn6"){
@@ -131,7 +131,7 @@ var main = function() {
         len = $("#inBox2").val();
         console.log(len);
         console.log(str);
-        $("#outDiv").text(filterWords(str,len));
+        $("#outDiv").text(filterWords(str,len)).fadeIn('100');
     } 
 
 
